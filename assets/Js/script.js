@@ -101,7 +101,7 @@ function calculateTotal() {
   // 4. Stampiamo in pagina il totale
   totalSlot.innerText = total;
   if(tasks.length == 0) {
-    totalSlot.innerText = "Nessun task da fare!!!";
+    totalSlot.innerText = "Nessuno";
   }
 }
 
