@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Todo App</title>
+
+  <!-- Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Livvic:wght@500;600;700&display=swap" rel="stylesheet">
+
+  <!-- Style -->
+  <link rel="stylesheet" href="./assets/css/style.css">
+  
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="./assets/img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+  <div class="container">
+
+    <!-- Header -->
+    <header>
+      <div class="header-top">
+        <h1>Todo List</h1>
+      </div>
+      <div class="header-bottom">
+        Task da svolegere: <span class="total-slot">0</span>
+      </div>
+    </header>
+
+    <!-- Main -->
+    <main>
+      <!-- Lista -->
+      <ul class="tasks-list">
+        <!-- 
+        <li class="task">
+          <div class="task-info">
+            <h3>Sara</h3>
+            <p>Biglietti per il cinema</p>
+          </div>
+          <div>
+          <button class="task-button">❌</button>
+          </div>
+        </li>
+         -->
+      </ul>
+
+      <!-- Form -->
+      <form id="task-form">
+        <div class="form-fields">
+          <label for="task-field">Cosa devi fare?</label>
+          <input type="text" placeholder="Scrivi qui il task" maxlength="30" id="task-field" autofocus required>
+          <label for="time-field">Scadenza: 📅</label>
+          <input type="datetime-local" placeholder="Quando?" name="time-field" id="time-field" required>
+        </div>
+        <div>
+          <button class="form-button">+</button>
+        </div>
+        
+      </form>
+
+      <footer>
+        <p>Daniele Morello</p>
+        <p>Copyright &copy; <time>2022</time> - Tutti i diritti riservati</p>
+      </footer>
+    </main>
+  </div>
+
+  <!-- JavaScript -->
+  <script src="./assets/Js/script.js"></script>
+</body>
+
+</html>

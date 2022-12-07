@@ -1,0 +1,137 @@
+:root {
+  --blue: #3e92cc;
+  --blue-dark: #0a2463;
+  --gray: #d4d7f5;
+  --red:#d8315b;
+  --yellow: #f2ad41;
+  --white:#fffaff;
+}
+
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Container */
+.container {
+  max-width: 500px;
+  margin: 60px auto;
+  border-radius: 6px;
+  background-color: var(--blue-dark);
+}
+
+/* Regole Generiche */
+html {
+  background-color: var(--gray);
+  font-family: Livvic, sans-serif;
+}
+
+h1 {
+  color: var(--yellow);
+  padding: 16px;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 1;
+  text-transform: uppercase;
+  text-align: center;
+  padding-top: 50px;
+}
+
+/* Header */
+header {
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.header-top {
+  height: 130px;
+  background-color: var(--blue-dark);
+}
+
+.header-bottom {
+  height: 50px;
+  background-color: var(--blue);
+  border-radius: 0 0 15px 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--white);
+}
+
+.total-slot {
+  font-size: 28px;
+  font-weight: 600;
+  margin-left: 10px;
+}
+
+/* Main */
+main {
+  padding: 10px;
+}
+
+/* Lista regali */
+.task {
+  background-color: var(--white);
+  border-radius: 8px;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.task-info {
+  width: 70%;
+  padding: 8px;
+}
+
+.task-button {
+  width: 10%;
+  border: none;
+  background-color: var(--white);
+  margin-left: 110px;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+/* Form */
+form {
+  background-color: var(--red);
+  border-radius: 8px;
+  display: flex;
+  padding-bottom: 10px;
+}
+
+.form-fields {
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  row-gap: 10px;
+  /* justify-content: space-between; */
+}
+
+input {
+  font-size: 16px;
+  padding: 8px;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+}
+
+.form-button {
+  border-radius: 50%;
+  background-color: var(--blue-dark);
+  font-size: 25px;
+  color: var(--white);
+  margin: 5px;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+
+footer {
+  color: var(--white);
+  text-align: center;
+  padding: 10px;
+}
